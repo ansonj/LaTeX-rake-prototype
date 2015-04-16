@@ -1,5 +1,8 @@
 $clean_automatically = true
 
+# Delete this line or set to nil if not interested
+$target_length = 10..15
+
 desc 'Default task (process with BibTeX)'
 task :default => [:bibtex]
 
@@ -23,6 +26,7 @@ task :bibtex do
         func_clean
     end
     func_open
+    func_print_target
 end
 
 desc 'Process, but skip BibTeX'
@@ -33,6 +37,7 @@ task :nobib do
         func_clean
     end
     func_open
+    func_print_target
 end
 
 desc 'Quick recreate+open pdf'
@@ -65,4 +70,10 @@ end
 
 def func_open
     sh 'open ./master.pdf'
+end
+
+def func_print_target
+    if $target_length != nil
+        puts "Target length is #{$target_length.first}-#{$target_length.last} pages."
+    end
 end
