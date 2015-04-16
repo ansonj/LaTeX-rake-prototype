@@ -1,0 +1,3 @@
+# LaTeX + rake prototype
+
+...
