@@ -24,7 +24,7 @@ Get it from [TeX Live](http://tug.org/texlive/), or [MacTeX for OS X](https://ww
     1. Update `todo.tex` to keep track of your progress.
     1. Put your sources in `src.bib`. (I use [BibDesk](http://bibdesk.sourceforge.net) on OS X, distributed with [MacTeX](https://www.tug.org/mactex/).)
 1. Run `rake`.
-1. Enjoy the PDF.
+1. Enjoy `master.pdf`.
 
 ## Todo
 
