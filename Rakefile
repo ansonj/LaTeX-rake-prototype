@@ -1,3 +1,5 @@
+# Set to false if your paper is in Dropbox or similar
+# and the sync service can't keep up
 $clean_automatically = true
 
 # Delete this line or set to nil if not interested
