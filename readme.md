@@ -8,9 +8,15 @@ A handful of `.tex` files, plus a `Rakefile`, so you can quickly get started wri
 
 Text and code go in, pretty document comes out.
 
-[Read this](https://en.wikibooks.org/wiki/LaTeX); it's everything you need to know.
+[Read this Wikibook](https://en.wikibooks.org/wiki/LaTeX); it's everything you need to know. I don't go into tons of detail here because the Wikibook is so exhaustive.
 
-Get it from [TeX Live](http://tug.org/texlive/), or [MacTeX for OS X](https://www.tug.org/mactex/).
+## Requirements
+
+- Ruby, specifically `rake`
+    - [RVM](http://rvm.io) is your friend. I bet it includes `rake`, but if not, [please let me know and] you can `gem install rake`.
+- LaTeX, specifically `pdflatex`
+    - There are some [browser-based options](https://en.wikibooks.org/wiki/LaTeX/Installation#Online_solutions) if you want to see what LaTeX is all about before installing.
+    - Install everything you need from [TeX Live](http://tug.org/texlive/), or [MacTeX for OS X](https://www.tug.org/mactex/).
 
 ## Usage
 
