@@ -4,11 +4,17 @@
 
 A handful of `.tex` files, plus a `Rakefile`, so you can quickly get started writing a beautifully-typset and fully-cited paper.
 
-## What is LaTeX?
+### What is LaTeX?
 
 Text and code go in, pretty document comes out.
 
 [Read this Wikibook](https://en.wikibooks.org/wiki/LaTeX); it's everything you need to know. I don't go into tons of detail here because the Wikibook is so exhaustive.
+
+### Why should I use LaTeX?
+
+It's the 21st century; you shouldn't have to fuss with WYSIWYG editors to make sure that all your section headers are formatted the same way. LaTeX allows you to focus on the *content* of your documents and let the computer take care of the rest.
+
+LaTeX also allows you to organize your document as a series of modular files (this repository is an example). This helps you focus on one part of your document as a time. All of the little text files are very VCS-friendly, too.
 
 ## Requirements
 
