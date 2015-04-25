@@ -44,6 +44,11 @@ task :quick do
   func_open
 end
 
+desc 'Print target length'
+task :len do
+  func_print_target
+end
+
 def func_run_dry
   sh 'pdflatex -draftmode -halt-on-error master.tex'
 end
