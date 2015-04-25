@@ -40,5 +40,6 @@ LaTeX also allows you to organize your document as a series of modular files (th
 
 ## Todo
 
+- Add [`subfiles` support](https://en.wikibooks.org/wiki/LaTeX/Modular_Documents#Separate_compilation_of_child_documents) for separate compilation of individual document sections
 - Add `$use_bibtex` option to top of rakefile so you can easily turn it off if desired (?)
     - Don't create tasks if the flag is `false`
