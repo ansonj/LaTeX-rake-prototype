@@ -43,3 +43,7 @@ LaTeX also allows you to organize your document as a series of modular files (th
 - Add [`subfiles` support](https://en.wikibooks.org/wiki/LaTeX/Modular_Documents#Separate_compilation_of_child_documents) for separate compilation of individual document sections
 - Add `$use_bibtex` option to top of rakefile so you can easily turn it off if desired (?)
     - Don't create tasks if the flag is `false`
+- Add watchr?
+    - The reason not to is that, at least on my system, rerunning LaTeX when the PDF is open in Preview destroys Preview's scroll position. If you're referencing the PDF when writing TeX, this would be annoying.
+    - But, it would help check for errors in your syntax, etc.
+    - Maybe add something like `rake w` to toggle... if there's an easy way to see if it's currently watching or not.
