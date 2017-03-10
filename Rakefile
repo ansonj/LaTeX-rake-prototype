@@ -1,17 +1,8 @@
-# Set to false if your paper is in Dropbox or similar
-# and the sync service can't keep up
-$clean_automatically = true
-
 # Delete this line or set to nil if not interested
 $target_length = 10..15
 
 desc 'Default task (process with BibTeX)'
 task default: [:bibtex]
-
-desc 'Remove intermediate files'
-task :clean do
-  func_clean
-end
 
 desc 'Open output pdf'
 task :open do
@@ -24,7 +15,6 @@ task :bibtex do
   func_run_bibtex
   func_run_dry
   func_run_create
-  func_clean if $clean_automatically
   func_open
   func_print_target
 end
@@ -33,7 +23,6 @@ desc 'Process, but skip BibTeX'
 task :nobib do
   func_run_dry
   func_run_create
-  func_clean if $clean_automatically
   func_open
   func_print_target
 end
@@ -59,16 +48,6 @@ end
 
 def func_run_bibtex
   sh 'bibtex master'
-end
-
-def func_clean
-  sh 'rm -f master.aux'
-  sh 'rm -f master.log'
-  sh 'rm -f master.out'
-  sh 'rm -f master.toc'
-  # bibtex stuff
-  sh 'rm -f master.bbl'
-  sh 'rm -f master.blg'
 end
 
 def func_open
